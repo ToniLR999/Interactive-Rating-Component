@@ -20,6 +20,7 @@ body{
     background-color: var(--very-dark-blue);
     color: var(--medium-grey);
 
+
 }
 h1{
     color: var(--white);
@@ -29,24 +30,31 @@ p{
 }
 
 .container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
     border-radius: 40px;
     padding: 2rem;
     background-color: var(--dark-blue);
-    width: 420px;
+    width: 415px;
     height: 415px;
-    margin: 0 auto;
 }
 button{
     border: none;
-    padding: 5px;
-    background-color: var(--dark-blue);
+    padding: 12px;
+    background-color: var(--very-dark-blue);
     color: var(--light-grey);
+    border-radius: 50%;                                                                                    
 }
 .ratings{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 button[type=submit]{
     border: none;
@@ -55,4 +63,5 @@ button[type=submit]{
     width: 100%;
     border-radius: 40px;
     padding: 10px;
+    margin-top: 20px;
 }
