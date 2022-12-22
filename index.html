@@ -17,32 +17,32 @@
 <body>
   <div class="container">
     <div class="content">
-      <button><img src="./images/icon-star.svg" alt="star" ></button>
-      <h1>How did we do?</h1>
-      <p>Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!</p>
-      <div class="ratings">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+      <div class="selection active">
+        <button class="btn btn-primary"><img src="./images/icon-star.svg" alt="star" ></button>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        <div class="ratings">
+          <button value="1" class="btn btn-primary btn-option">1</button>
+          <button value="2" class="btn btn-primary btn-option">2</button>
+          <button value="3" class="btn btn-primary btn-option">3</button>
+          <button value="4" class="btn btn-primary btn-option">4</button>
+          <button value="5" class="btn btn-primary btn-option">5</button>
+        </div>
+        <button type="submit">SUBMIT</button>
       </div>
-      <button type="submit">SUBMIT</button>
+      <div class="thank-you">
+        <div class="icon-section">
+          <img src="./images/illustration-thank-you.svg" alt="thank-you">
+        </div>
+        <button class="btn btn-secondary">  You selected <span class="selected-value"></span><!-- Add rating here --> out of 5</button>
+        <H1>Thank you!</H1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
     </div>
   </div>
-  <!-- Rating state start -->
-
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
 </body>
+
+<script src="./script.js"></script>
 </html>
