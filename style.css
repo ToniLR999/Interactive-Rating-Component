@@ -23,16 +23,20 @@ html, body{
 
 body{
     background-color: var(--very-dark-blue);
-    color: var(--medium-grey);
+    color: var(--light-grey);
 
 
 
 }
 h1{
     color: var(--white);
+    margin-top: 50px;
 }
 p{
+    margin: 0;
     font-size: 15px;
+    line-height: 1.7;
+    font-weight: bold;
 }
 
 .container{
@@ -52,11 +56,13 @@ p{
     border-radius: 40px;
     padding: 2rem;
     background-color: var(--dark-blue);
-    width: 415px;
-    height: auto;
+    width: 412px;
+    height: 412px;
 }
 .thank-you.active{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .thank-you{
@@ -72,6 +78,9 @@ p{
 
 
 .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border: none;
     text-align: center;
@@ -87,12 +96,18 @@ p{
     color: var(--light-grey);
     border-radius: 50%;
 }
+#star-icon{
+    width: 20px;
+    height: 20px;
+}
 
 .btn-secondary{
     color: var(--orange);
     background-color: var(--very-dark-blue);
     border-radius: 50px;
-    padding: 8px;
+    padding: 5px;
+    width: 200px;
+    justify-content: center;
 }
 
 .btn-option:hover{
@@ -113,6 +128,7 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 button[type=submit]{
     border: none;
     background-color: var(--orange);
@@ -124,4 +140,9 @@ button[type=submit]{
     font-size: 18px;
     cursor: pointer;
 
+}
+
+button[type=submit]:hover{
+    background-color: var(--white);
+    color: var(--orange);
 }
